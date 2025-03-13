@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cultura China</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Noto+Sans:wght@400;700&display=swap">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Noto Serif', 'Noto Sans', sans-serif; }
+    header { background: #fcf9f8; border-bottom: 2px solid #f3e9e7; padding: 10px 20px; position: fixed; width: 100%; top: 0; z-index: 10; }
+    nav a { color: #1b100e; text-decoration: none; padding: 0 10px; }
+    nav a:hover { color: #e63b19; }
+    .hero { 
+      background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('https://c4.wallpaperflare.com/wallpaper/111/268/973/photography-sunset-chinese-temple-malaysia-wallpaper-preview.jpg');
+      background-size: cover; 
+      text-align: center; 
+      color: white; 
+      padding: 50px; 
+      border-radius: 10px; 
+      margin-top: 80px; /* Adjust for fixed header */
+    }
+    .grid div { transition: transform 0.3s ease-in-out; cursor: pointer; }
+    .grid div:hover { transform: scale(1.05); }
+  </style>
+</head>
+<body class="bg-[#fcf9f8] min-h-screen flex flex-col">
+  <header class="flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg" alt="China" class="w-6">
+      <h2 class="text-lg font-bold">Cultura China</h2>
+    </div>
+    <nav class="flex gap-6">
+      <a href="#historia">Historia</a>
+      <a href="#filosofia">Filosofía</a>
+      <a href="#arte">Arte</a>
+      <a href="#festividades">Festividades</a>
+      <a href="#zodiaco">Zodiaco</a>
+    </nav>
+  </header>
+
+  <main class="flex flex-col items-center text-center p-6">
+    <div class="hero w-full max-w-3xl">
+      <h1 class="text-4xl font-black">Explora la rica historia y cultura de China</h1>
+    </div>
+
+    <!-- Sección Zodiaco -->
+    <section id="zodiaco" class="max-w-3xl mt-6 text-left">
+      <h3 class="text-2xl font-bold">Zodiaco Chino</h3>
+      <img src="https://i.pinimg.com/originals/32/ae/f5/32aef5d060c8afa2adf580160ff9383a.gif" alt="Zodiaco Chino" class="w-full h-64 object-cover rounded-lg mt-4">
+      <p class="text-sm text-[#975a4e] mt-2">
+        ¿Quieres saber tu signo zodiacal chino? Descúbrelo haciendo clic en el siguiente enlace:
+        <a href="https://leotay27.github.io/zodiacochinolux/" target="_blank" class="text-[#e63b19] font-semibold underline">¿Cuál es mi signo zodiacal chino?</a>
+      </p>
+    </section>
+
+    <h2 class="text-[22px] font-bold mt-6">Descubre China</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+      <div class="text-left" onclick="document.getElementById('historia').scrollIntoView({ behavior: 'smooth' });">
+        <div class="w-full bg-cover aspect-video rounded-xl" style="background-image: url('https://images.unsplash.com/photo-1608037521277-154cd1b89191?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z3JhbiUyMG11cmFsbGElMjBjaGluYXxlbnwwfHwwfHx8MA%3D%3D');"></div>
+        <p class="font-medium">Historia de China</p>
+      </div>
+      <div class="text-left" onclick="document.getElementById('filosofia').scrollIntoView({ behavior: 'smooth' });">
+        <div class="w-full bg-cover aspect-video rounded-xl" style="background-image: url('https://filosofiaenlared.com/wp-content/uploads/2022/04/confucio-china-filosofia.china_filosofoso-chinos.jpg');"></div>
+        <p class="font-medium">Filosofía China</p>
+      </div>
+      <div class="text-left" onclick="document.getElementById('arte').scrollIntoView({ behavior: 'smooth' });">
+        <div class="w-full bg-cover aspect-video rounded-xl" style="background-image: url('https://wallpapers.com/images/hd/fuji-scene-from-chureito-pagoda-9cafv73ym8r3nill.jpg');"></div>
+        <p class="font-medium">Arte Chino</p>
+      </div>
+      <div class="text-left" onclick="document.getElementById('festividades').scrollIntoView({ behavior: 'smooth' });">
+        <div class="w-full bg-cover aspect-video rounded-xl" style="background-image: url('https://c.files.bbci.co.uk/113C2/production/_123049507_gettyimages-163596053.jpg');"></div>
+        <p class="font-medium">Festividades Chinas</p>
+      </div>
+    </div>
+
+    <!-- Sección Historia -->
+    <section id="historia" class="max-w-3xl mt-6 text-left">
+      <h3 class="text-2xl font-bold">Historia de China</h3>
+      <img src="https://images.unsplash.com/photo-1608037521277-154cd1b89191?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z3JhbiUyMG11cmFsbGElMjBjaGluYXxlbnwwfHwwfHx8MA%3D%3D" alt="Gran Muralla China" class="w-full h-64 object-cover rounded-lg mt-4">
+      <p class="text-sm text-[#975a4e] mt-2">
+        La historia de China es una de las más largas y ricas del mundo, con una civilización que se remonta a más de 5,000 años. Durante milenios, China ha influido en gran parte de Asia y el mundo con sus innovaciones en tecnología, filosofía, arte y arquitectura.
+      </p>
+      <p class="text-sm text-[#975a4e] mt-2">
+        Desde sus primeras dinastías, como la Xia, Shang y Zhou, hasta los grandes imperios de la dinastía Qin y Han, China ha sido testigo de un desarrollo impresionante. Durante la dinastía Qin (221-206 a.C.), el emperador Qin Shi Huang unificó el país, estandarizó la escritura, la moneda y construyó la base de la Gran Muralla China para defenderse de invasiones extranjeras.
+      </p>
+      <p class="text-sm text-[#975a4e] mt-2">
+        Las dinastías Tang (618-907) y Song (960-1279) fueron períodos de gran florecimiento cultural y económico. Durante la dinastía Ming (1368-1644), China expandió su comercio y cultura a través del sudeste asiático. Posteriormente, la dinastía Qing (1644-1912) marcó el último período imperial antes de la formación de la República de China en 1912 y la posterior fundación de la República Popular China en 1949.
+      </p>
+      <p class="text-sm text-[#975a4e] mt-2">
+        Uno de los emblemas más reconocidos de China es la Gran Muralla, una estructura que se extendió durante siglos con el propósito de proteger al país de invasiones extranjeras. Su construcción comenzó en la dinastía Qin y se extendió hasta la dinastía Ming, convirtiéndose         en uno de los logros arquitectónicos más impresionantes del mundo.
+      </p>
+      <p class="text-sm text-[#975a4e] mt-2">
+        China también ha sido un centro de invención y descubrimiento. La pólvora, el papel, la imprenta y la brújula son solo algunas de las invenciones que se originaron en China y que han tenido un impacto significativo en la historia mundial.
+      </p>
+      <p class="text-sm text-[#975a4e] mt-2">
+        La historia china es también una historia de luchas internas y conflictos. Desde las guerras de los estados combatientes hasta la guerra civil china del siglo XX, el país ha enfrentado numerosos desafíos y ha demostrado una notable resiliencia y capacidad para adaptarse y prosperar.
+      </p>
+    </section>
+... (74 líneas restantes)
+Contraer
+message.txt
+14 KB
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cultura China</title>
+Expandir
+message.txt
+14 KB
+﻿
+MonMoher
+mr_mongy
+ 
+ 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cultura China</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Noto+Sans:wght@400;700&display=swap">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Noto Serif', 'Noto Sans', sans-serif; }
+    header { background: #fcf9f8; border-bottom: 2px solid #f3e9e7; padding: 10px 20px; position: fixed; width: 100%; top: 0; z-index: 10; }
+    nav a { color: #1b100e; text-decoration: none; padding: 0 10px; }
+    nav a:hover { color: #e63b19; }
+    .hero { 
+      background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('https://c4.wallpaperflare.com/wallpaper/111/268/973/photography-sunset-chinese-temple-malaysia-wallpaper-preview.jpg');
+      background-size: cover; 
+      text-align: center; 
+      color: white; 
+      padding: 50px; 
+      border-radius: 10px; 
+      margin-top: 80px; /* Adjust for fixed header */
+    }
+    .grid div { transition: transform 0.3s ease-in-out; cursor: pointer; }
+    .grid div:hover { transform: scale(1.05); }
+  </style>
+</head>
+<body class="bg-[#fcf9f8] min-h-screen flex flex-col">
+  <header class="flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg" alt="China" class="w-6">
+      <h2 class="text-lg font-bold">Cultura China</h2>
+    </div>
+    <nav class="flex gap-6">
+      <a href="#historia">Historia</a>
+      <a href="#filosofia">Filosofía</a>
+      <a href="#arte">Arte</a>
+      <a href="#festividades">Festividades</a>
+      <a href="#zodiaco">Zodiaco</a>
+    </nav>
+  </header>
+
+  <main class="flex flex-col items-center text-center p-6">
+    <div class="hero w-full max-w-3xl">
+      <h1 class="text-4xl font-black">Explora la rica historia y cultura de China</h1>
+    </div>
+
+    <!-- Sección Zodiaco -->
+    <section id="zodiaco" class="max-w-3xl mt-6 text-left">
+      <h3 class="text-2xl font-bold">Zodiaco Chino</h3>
+      <img src="https://i.pinimg.com/originals/32/ae/f5/32aef5d060c8afa2adf580160ff9383a.gif" alt="Zodiaco Chino" class="w-full h-64 object-cover rounded-lg mt-4">
+      <p class="text-sm text-[#975a4e] mt-2">
+        ¿Quieres saber tu signo zodiacal chino? Descúbrelo haciendo clic en el siguiente enlace:
+        <a href="https://leotay27.github.io/zodiacochinolux/" target="_blank" class="text-[#e63b19] font-semibold underline">¿Cuál es mi signo zodiacal chino?</a>
+      </p>
+    </section>
+
+    <h2 class="text-[22px] font-bold mt-6">Descubre China</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+      <div class="text-left" onclick="document.getElementById('historia').scrollIntoView({ behavior: 'smooth' });">
+        <div class="w-full bg-cover aspect-video rounded-xl" style="background-image: url('https://images.unsplash.com/photo-1608037521277-154cd1b89191?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z3JhbiUyMG11cmFsbGElMjBjaGluYXxlbnwwfHwwfHx8MA%3D%3D');"></div>
+        <p class="font-medium">Historia de China</p>
+      </div>
+      <div class="text-left" onclick="document.getElementById('filosofia').scrollIntoView({ behavior: 'smooth' });">
+        <div class="w-full bg-cover aspect-video rounded-xl" style="background-image: url('https://filosofiaenlared.com/wp-content/uploads/2022/04/confucio-china-filosofia.china_filosofoso-chinos.jpg');"></div>
+        <p class="font-medium">Filosofía China</p>
+      </div>
+      <div class="text-left" onclick="document.getElementById('arte').scrollIntoView({ behavior: 'smooth' });">
+        <div class="w-full bg-cover aspect-video rounded-xl" style="background-image: url('https://wallpapers.com/images/hd/fuji-scene-from-chureito-pagoda-9cafv73ym8r3nill.jpg');"></div>
+        <p class="font-medium">Arte Chino</p>
+      </div>
+      <div class="text-left" onclick="document.getElementById('festividades').scrollIntoView({ behavior: 'smooth' });">
+        <div class="w-full bg-cover aspect-video rounded-xl" style="background-image: url('https://c.files.bbci.co.uk/113C2/production/_123049507_gettyimages-163596053.jpg');"></div>
+        <p class="font-medium">Festividades Chinas</p>
+      </div>
+    </div>
+
+    <!-- Sección Historia -->
+    <section id="historia" class="max-w-3xl mt-6 text-left">
+      <h3 class="text-2xl font-bold">Historia de China</h3>
+      <img src="https://images.unsplash.com/photo-1608037521277-154cd1b89191?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z3JhbiUyMG11cmFsbGElMjBjaGluYXxlbnwwfHwwfHx8MA%3D%3D" alt="Gran Muralla China" class="w-full h-64 object-cover rounded-lg mt-4">
+      <p class="text-sm text-[#975a4e] mt-2">
+        La historia de China es una de las más largas y ricas del mundo, con una civilización que se remonta a más de 5,000 años. Durante milenios, China ha influido en gran parte de Asia y el mundo con sus innovaciones en tecnología, filosofía, arte y arquitectura.
+      </p>
+      <p class="text-sm text-[#975a4e] mt-2">
+        Desde sus primeras dinastías, como la Xia, Shang y Zhou, hasta los grandes imperios de la dinastía Qin y Han, China ha sido testigo de un desarrollo impresionante. Durante la dinastía Qin (221-206 a.C.), el emperador Qin Shi Huang unificó el país, estandarizó la escritura, la moneda y construyó la base de la Gran Muralla China para defenderse de invasiones extranjeras.
+      </p>
+      <p class="text-sm text-[#975a4e] mt-2">
+        Las dinastías Tang (618-907) y Song (960-1279) fueron períodos de gran florecimiento cultural y económico. Durante la dinastía Ming (1368-1644), China expandió su comercio y cultura a través del sudeste asiático. Posteriormente, la dinastía Qing (1644-1912) marcó el último período imperial antes de la formación de la República de China en 1912 y la posterior fundación de la República Popular China en 1949.
+      </p>
+      <p class="text-sm text-[#975a4e] mt-2">
+        Uno de los emblemas más reconocidos de China es la Gran Muralla, una estructura que se extendió durante siglos con el propósito de proteger al país de invasiones extranjeras. Su construcción comenzó en la dinastía Qin y se extendió hasta la dinastía Ming, convirtiéndose         en uno de los logros arquitectónicos más impresionantes del mundo.
+      </p>
+      <p class="text-sm text-[#975a4e] mt-2">
+        China también ha sido un centro de invención y descubrimiento. La pólvora, el papel, la imprenta y la brújula son solo algunas de las invenciones que se originaron en China y que han tenido un impacto significativo en la historia mundial.
+      </p>
+      <p class="text-sm text-[#975a4e] mt-2">
+        La historia china es también una historia de luchas internas y conflictos. Desde las guerras de los estados combatientes hasta la guerra civil china del siglo XX, el país ha enfrentado numerosos desafíos y ha demostrado una notable resiliencia y capacidad para adaptarse y prosperar.
+      </p>
+    </section>
+
+    <!-- Sección Filosofía -->
+    <section id="filosofia" class="max-w-3xl mt-6 text-left">
+      <h3 class="text-2xl font-bold">Filosofía China</h3>
+      <img src="https://www.worldhistory.org/uploads/images/969.jpg" alt="Confucio" class="w-full h-64 object-cover rounded-lg mt-4">
+      <p class="text-sm text-[#975a4e] mt-2">
+        La filosofía china ha sido profundamente influenciada por pensadores como Confucio, Lao Tse y Zhuangzi. El confucianismo, que promueve la moralidad, el respeto por los ancianos y la armonía social, es uno de los pilares más importantes de la sociedad china.
+      </p>
+      <p class="text-sm text-[#975a4e] mt-2">
+        Confucio (551-479 a.C.) es uno de los filósofos más influyentes de China. Sus enseñanzas enfatizan la importancia de la moralidad personal y gubernamental, las relaciones correctas entre individuos y la justicia social. El confucianismo ha sido una guía ética y moral en la vida cotidiana de los chinos durante siglos y ha influido en la administración del gobierno y la educación.
+      </p>
+      <p class="text-sm text-[#975a4e] mt-2">
+        Lao Tse, considerado el fundador del taoísmo, es otro filósofo influyente cuya obra más famosa, el "Tao Te Ching", se centra en la simplicidad, la humildad y la armonía con la naturaleza. El taoísmo enfatiza la idea del "wu wei" (no hacer), que promueve la acción sin esfuerzo, la simplicidad y la flexibilidad.
+      </p>
+      <p class="text-sm text-[#975a4e] mt-2">
+        El budismo, que llegó a China desde la India durante la dinastía Han, también ha tenido un profundo impacto en la filosofía china. El budismo chino se fusionó con las tradiciones locales y produjo escuelas únicas como el budismo Chan (Zen en japonés), que enfatiza la meditación y la intuición directa sobre el texto y el ritual.
+      </p>
+      <p class="text-sm text-[#975a4e] mt-2">
+        Además de estos tres pilares, otras escuelas de pensamiento como el legalismo y el moísmo también han jugado roles importantes en la historia intelectual china.
+      </p>
+    </section>
+
+    <!-- Sección Arte -->
+    <section id="arte" class="max-w-3xl mt-6 text-left">
+      <h3 class="text-2xl font-bold">Arte Chino</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Great_Wave_off_Kanagawa2.jpg/1200px-Great_Wave_off_Kanagawa2.jpg" alt="Gran Ola de Kanagawa" class="w-full h-64 object-cover rounded-lg mt-4">
+      <p class="text-sm text-[#975a4e] mt-2">
+        El arte chino ha jugado un papel crucial en la preservación de la cultura y los valores tradicionales. La caligrafía, la pintura, la cerámica y la escultura son algunas de las formas de arte más representativas.
+      </p>
+      <p class="text-sm text-[#975a4e] mt-2">
+        La caligrafía china es una de las formas de arte más antiguas y respetadas. Considerada no solo una forma de escritura sino también una forma de expresión artística, la caligrafía china utiliza pinceles y tinta para crear caracteres que son valorados tanto por su contenido como por su belleza estética.
+      </p>
+      <p class="text-sm text-[#975a4e] mt-2">
+        La pintura china tradicionalmente se centra en paisajes naturales, animales y figuras mitológicas. Los artistas chinos valoran la representación de la naturaleza y buscan capturar la esencia de los paisajes más que una reproducción exacta. Las técnicas de pincel y tinta se combinan con la poesía para crear obras que reflejan una profunda conexión con el entorno natural.
+      </p>
+      <p class="text-sm text-[#975a4e] mt-2">
+        La cerámica china, especialmente la porcelana, es famosa en todo el mundo por su delicadeza y belleza. La dinastía Ming es especialmente conocida por sus finos trabajos en porcelana azul y blanca, que fueron exportados y apreciados a nivel mundial.
+      </p>
+      <p class="text-sm text-[#975a4e] mt-2">
+        Además, la arquitectura tradicional china, como los templos budistas y las pagodas, destaca por su elegancia y armonía con el entorno. Los diseños arquitectónicos se basan en principios de simetría y equilibrio, con un fuerte énfasis en la relación entre los edificios y su entorno natural.
+      </p>
+    </section>
+
+    <!-- Sección Festividades -->
+    <section id="festividades" class="max-w-3xl mt-6 text-left">
+      <h3 class="text-2xl font-bold">Festividades Chinas</h3>
+      <img src="https://expresionnorte.com.ar/wp-content/uploads/2025/02/Ano-nuevo-chino-1.jpg" alt="Año Nuevo Chino" class="w-full h-64 object-cover rounded-lg mt-4">
+      <p class="text-sm text-[#975a4e] mt-2">
+        Las festividades chinas son celebraciones vibrantes que reflejan la importancia de la familia, el respeto por los antepasados y las tradiciones. El Año Nuevo Chino es una de las festividades más importantes, marcada por desfiles, danzas del dragón y reuniones familiares.
+      </p>
+      <p class="text-sm text-[#975a4e] mt-2">
+        El Año Nuevo Chino, también conocido como la Fiesta de la Primavera, es la festividad más significativa en el calendario chino. Durante esta celebración, las familias se reúnen para compartir comidas especiales, adornar sus hogares con decoraciones rojas y realizar rituales para atraer la buena suerte. El festival culmina con impresionantes fuegos artificiales y la danza del dragón y el león.
+      </p>
+      <p class="text-sm text-[#975a4e] mt-2">
+        El Festival de los Faroles, que marca el final del Año Nuevo Chino, es otra celebración importante. Durante este festival, se exhiben faroles coloridos y se realizan actividades como el adivinamiento de acertijos escritos en los faroles y la danza del dragón.
+      </p>
+      <p class="text-sm text-[#975a4e] mt-2">
+        El Festival del Medio Otoño, celebrado en el decimoquinto día del octavo mes lunar, es otra festividad crucial. Las familias se reúnen para disfrutar de los pasteles de luna y admirar la luna llena, que se considera un símbolo de reunión y armonía.
+      </p>
+      <p class="text-sm text-[#975a4e] mt-2">
+        Estas festividades no solo son momentos de celebración, sino también oportunidades para fortalecer los lazos familiares y preservar las tradiciones culturales.
+      </p>
+    </section>
+  </main>
+
+  <script>
+    function searchContent() {
+      let input = document.getElementById("searchInput").value.toLowerCase();
+      alert("Buscando: " + input);
+    }
+  </script>
+</body>
+</html>
+message.txt
+14 KB
